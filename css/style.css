@@ -13,7 +13,7 @@ main {
 /* Page */
 body {
     background-color: black;
-    color: white;
+    color: white; /* Les textes seront blancs */
     font-family: Arial, sans-serif;
 }
 
@@ -44,7 +44,7 @@ nav span {
 }
 
 /* Compte */
-button {
+boutton {
     background-color: white;
     color: black;
     border: none;
@@ -66,6 +66,10 @@ button {
 /* Conteneur des films */
 .conteneur-de-films {
     text-align: center;
+}
+
+.floutteur-page {
+    filter: blur(2px) brightness(40%);
 }
 
 /* Chaque film sur la page principale (Position) */
@@ -114,13 +118,33 @@ box-shadow: 0 0 13px white; /* "0" controle le décalage */
 
 .footer a {
     color: gray;
-    text-decoration: none;
+    text-decoration: none; /* retirer les tirets */ 
     font-size: 14px;
 }
 
 .footer img {
     width: 80px;
-    
+}
+
+
+
+/* Page contact */
+.contact-box {
+    border: 3px solid orange; 
+    padding: 40px;                 /* espace intérieur */
+    margin: 40px auto;             /* centre le bloc */
+    max-width: 900px;            
+    box-shadow: 0 0 15px orange;   /* un petit orange pour faire beau */
+}
+
+/* Titres du contact */
+.contact-box h1, .contact-box h2 {
+    margin-bottom: 15px;
+}
+
+/* Sections dans contact(adresse, numéros, courriel) */
+.contact-box p, .contact-box ul , .contact-box h2 {
+    margin-bottom: 10px;
     
 }
 
