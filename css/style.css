@@ -1,0 +1,129 @@
+/* Reset simple */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Principal */
+main {
+    width: 100%;
+    margin-left: 1%;
+}
+
+/* Page */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid gray;
+    padding: 15px;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+}
+
+.nav-compte {
+    float: right;
+     margin-top: -20px; 
+}
+
+
+/* Liens du menu */
+nav a,
+nav span {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Compte */
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+/* Image du menu principale (Conjuring) */
+.image-vedette {  
+    width: 100%;
+}
+
+/* SECTION FILMS */
+.section-films {
+    padding: 40px;
+}
+
+/* Conteneur des films */
+.conteneur-de-films {
+    text-align: center;
+}
+
+/* Chaque film sur la page principale (Position) */
+.film {
+    display: inline-block;   /* clé noobie pour mettre en ligne */
+    width: 30%; /* Pour assuré : 3 par rangée . La largeur du bloc des film*/
+    margin: 15px;
+    vertical-align: top;
+}
+
+/* Image des film */
+.film img {
+    width: 60%;
+    height: 300px;       /* force une hauteur égale */
+    object-fit: cover;  /* évite la déformation */
+   /* border-radius: 6px; */ 
+   border: 3px solid white;
+box-shadow: 0 0 13px white; /* "0" controle le décalage */
+}
+
+/* Titre */
+.film h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+/* Lien */
+.film a {
+    color: #4da6ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    border-top: 2px solid rgb(255, 255, 255);
+    padding: 10px 0; /* espace À L’INTÉRIEUR de l’élément */ 
+    text-align: center;
+    box-shadow: 0 2px 15px white;
+}
+
+.footer a, .footer img {
+    margin: 0 20px; /* 0px haut et bas mais 20px droite et gauche*/  
+    vertical-align: middle;
+}
+
+.footer a {
+    color: gray;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer img {
+    width: 80px;
+    
+    
+}
+
+
+
+
