@@ -13,13 +13,15 @@ main {
 /* Page */
 body {
     background-color: black;
-    color: white; /* Les textes seront blancs */
+    color: white;
+    /* Les textes seront blancs */
     font-family: Arial, sans-serif;
 }
 
 /* Header */
 header {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 2px 20px white;
     padding: 15px;
 }
 
@@ -30,7 +32,7 @@ nav {
 
 .nav-compte {
     float: right;
-     margin-top: -20px; 
+    margin-top: -20px;
 }
 
 
@@ -44,17 +46,28 @@ nav span {
 }
 
 /* Compte */
-boutton {
+.boutton {
     background-color: white;
     color: black;
     border: none;
+    border-radius: 6px;
     padding: 5px 10px;
     font-weight: bold;
     margin-left: 20px;
 }
 
+.nav-links a{
+font-weight: bold;
+color: rgb(255, 255, 255);
+}
+.nav-links a:hover { /* j'ai trouvé cette méthode de W3school :) */
+    background-color: #ffbaba;
+    color: black;
+}
+
+
 /* Image du menu principale (Conjuring) */
-.image-vedette {  
+.image-vedette {
     width: 100%;
 }
 
@@ -68,26 +81,35 @@ boutton {
     text-align: center;
 }
 
+.conteneur-de-films a {
+    color: #00ff2a;
+}
+
 .floutteur-page {
     filter: blur(2px) brightness(40%);
 }
 
-/* Chaque film sur la page principale (Position) */
+/* Chaque film (Position) */
 .film {
-    display: inline-block;   /* clé noobie pour mettre en ligne */
-    width: 30%; /* Pour assuré : 3 par rangée . La largeur du bloc des film*/
+    display: inline-block;
+    /* clé noobie pour mettre en ligne */
+    width: 350px;
+    height: 400px;
+    /* Pour assuré : 3 par rangée . La largeur du bloc des film*/
     margin: 15px;
-    vertical-align: top;
 }
 
-/* Image des film */
+/* Image des film (Modification des images comme la taille)*/
 .film img {
-    width: 60%;
-    height: 300px;       /* force une hauteur égale */
-    object-fit: cover;  /* évite la déformation */
-   /* border-radius: 6px; */ 
-   border: 3px solid white;
-box-shadow: 0 0 13px white; /* "0" controle le décalage */
+    width: 200px;
+    height: 300px;
+    /* force une hauteur égale */
+    object-fit: cover;
+    /* évite la déformation */
+    /* border-radius: 6px; */
+    border: 3px solid white;
+    box-shadow: 0 0 13px white;
+    /* "0" controle le décalage */
 }
 
 /* Titre */
@@ -106,19 +128,23 @@ box-shadow: 0 0 13px white; /* "0" controle le décalage */
 /* Footer */
 .footer {
     border-top: 2px solid rgb(255, 255, 255);
-    padding: 10px 0; /* espace À L’INTÉRIEUR de l’élément */ 
+    padding: 10px 0;
+    /* espace À L’INTÉRIEUR de l’élément */
     text-align: center;
     box-shadow: 0 2px 15px white;
 }
 
-.footer a, .footer img {
-    margin: 0 20px; /* 0px haut et bas mais 20px droite et gauche*/  
+.footer a,
+.footer img {
+    margin: 0 20px;
+    /* 0px haut et bas mais 20px droite et gauche*/
     vertical-align: middle;
 }
 
 .footer a {
     color: gray;
-    text-decoration: none; /* retirer les tirets */ 
+    text-decoration: none;
+    /* retirer les tirets */
     font-size: 14px;
 }
 
@@ -127,27 +153,131 @@ box-shadow: 0 0 13px white; /* "0" controle le décalage */
 }
 
 
-
 /* Page contact */
-.contact-box {
-    border: 3px solid orange; 
-    padding: 40px;                 /* espace intérieur */
-    margin: 40px auto;             /* centre le bloc */
-    max-width: 900px;            
-    box-shadow: 0 0 15px orange;   /* un petit orange pour faire beau */
+.Boîte-Information {
+    border: 3px solid orange;
+    padding: 40px;
+    /* met un espace intérieur */
+    margin: 40px auto;
+    /* je centre le bloc */
+    max-width: 900px;
+    box-shadow: 0 0 15px orange;
+    /* un petit orange pour faire beau */
 }
 
 /* Titres du contact */
-.contact-box h1, .contact-box h2 {
+.Boîte-Information h1,
+.Boîte-Information h2 {
     margin-bottom: 15px;
 }
 
 /* Sections dans contact(adresse, numéros, courriel) */
-.contact-box p, .contact-box ul , .contact-box h2 {
+.Boîte-Information p,
+.Boîte-Information ul,
+.Boîte-Information h2 {
     margin-bottom: 10px;
-    
 }
 
 
+/* Ma Page connection */
+.rectangle {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+
+    width: 600px;
+    height: 525px;
+
+    margin-left: -300px;
+    /* moitié de la largeur */
+
+    background: white;
+    border: 3px solid rgb(0, 68, 255);
+    box-shadow: 0 0 20px rgb(255, 254, 253);
+    border-radius: 20px;
+
+    z-index: 100;
+    /* au-dessus de tout */
+}
+
+.colonne-gauche input::placeholder {
+    color: black;
+    text-decoration-thickness: 10px;
+}
+
+.colonne-gauche h4 {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.instructions-pass {
+    color: black;
+    font-size: 12px;
+    margin: 10px 15px;
+
+}
+
+.colonne-gauche {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    /* évite les dépassement en incluant le padding dans la largeur. */
+}
 
 
+.colonne-droite {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    /* empêche les images de dépasser le cadre*/
+}
+
+.image-droite {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* empêche l'image de se déformer */
+    border-radius: 17px;
+}
+
+
+.colonne-gauche input[type="text"],
+.colonne-gauche input[type="email"],
+.colonne-gauche input[type="password"] {
+    overflow-y: auto;
+    width: 80%;
+    padding: 6px;
+    margin-bottom: 10px;
+    outline: solid black 1.5px;
+}
+
+.Misc {
+    color: rgb(109, 109, 109);
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
+    font-size: 11px;
+}
+
+
+/* Ma Page connection */
+.rectangle2 {
+    position: fixed;
+    top: 90px;
+    left: 50%;
+
+    width: 600px;
+    height: 400px;
+
+    margin-left: -300px;
+    /* moitié de la largeur */
+
+    background: white;
+    border: 3px solid rgb(0, 68, 255);
+    box-shadow: 0 0 20px rgb(255, 254, 253);
+    border-radius: 20px;
+
+    z-index: 100;
+}
